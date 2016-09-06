@@ -1,1 +1,0 @@
-import './DemoApp.scss';

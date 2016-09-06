@@ -9,7 +9,13 @@ import { Router, browserHistory } from 'react-router';
 
 import routes from './routes';
 
-const store = configureStore();
+var initialState = {
+  data: [],
+  url: "/api/comments",
+  pollInterval: 2000
+}
+
+const store = configureStore(initialState);
 const rootElement = document.getElementById('app');
 
 let ComponentEl;
